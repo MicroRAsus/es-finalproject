@@ -68,7 +68,7 @@ static void *bluetooth_spp_thread(void *ptr)
 		BtSppCommand.RfcommClose();
 	}
 
-//	pthread_exit(0); /* exit */
+	pthread_exit(0); /* exit */
 	return 0;
 }
 
@@ -86,7 +86,7 @@ int main(int argc, char *argv[]){
     const uint32_t MaxIdleTime = 10*60*OS_TicksPerSecond(); // spider go to sleep when exceed this time
 //    const uint32_t MaxIdleTime = 10*60*OS_TicksPerSecond(); // spider go to sleep when exceed this time
 
-	printf("===== Spider Demo John Style =====\r\n"); 
+	printf("===== Spider Demo =====\r\n"); 
  
 
 	printf("Spider Init & Standup\r\n");
